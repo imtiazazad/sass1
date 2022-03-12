@@ -1,0 +1,43 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "header";
+@import "button";
+@import "box";
+@import "contact";
+@import "footer";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+@mixin container-width {
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.header-width,
+.middle-container,
+.contact-container {
+@include container-width;
+}
+hr {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
+    margin-top: 100px;
+  }
+  .fa-star {
+    color: orange;
+  }
+.box p {
+    color: #787885;
+  }
+.see-more {
+    text-decoration: none;
+    color: #379b7d;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 180px;
+    margin: 40px 10px;
+  }

@@ -1,0 +1,18 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 130px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form input,
+  button {
+    font-size: 1.1em;
+    margin-top: 8px;
+    border: 1px solid lightslategray;
+    padding-left: 10px;
+    border-radius: 2px;
+  }

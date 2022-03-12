@@ -1,0 +1,23 @@
+@import "variable"; //for using $pd
+@mixin input-button {
+    font-size: 1.1em;
+    margin-top: $pd;
+    border: 1px solid lightslategray;
+    padding-left: $pd;
+    border-radius: 2px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 130px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form input,
+  button {
+    @include input-button;
+  }

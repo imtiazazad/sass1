@@ -1,0 +1,85 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "scss/header";
+@import "scss/button";
+@import "scss/middle";
+@import "scss/box";
+@import "scss/contact";
+@import "scss/footer";
+@import "scss/variable";
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+@mixin container-width {
+    width: 50%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.header-width,
+.middle-container,
+.contact-container {
+@include container-width;
+}
+hr {
+    @include hr;
+  }
+  .fa-star {
+    color: orange;
+  }
+.box p {
+    color: #787885;
+  }
+.see-more {
+    text-decoration: none;
+    color: #379b7d;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 180px;
+    margin: 40px $pd;
+  }
+
+
+  /* media queries */
+
+@media only screen and (max-width: 668px) {
+    .header-container {
+      width: 100%;
+      width: 350px;
+      display: block;
+    }
+    .header-width {
+      margin-top: 50px;
+    }
+    .middle-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: $pd;
+    }
+    .contact-container,
+    .footer {
+      width: 300px;
+      display: block;
+      margin: $pd;
+    }
+  }
+  @media only screen and (min-width: 688px) and (max-width: 992px) {
+    .header-container {
+      width: 100%;
+      width: 475px;
+    }
+    .middle-container {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 30px;
+    }
+    .contact-container,
+    .footer {
+      width: 710px;
+      display: block;
+      margin: $pd;
+    }
+  }
+  
